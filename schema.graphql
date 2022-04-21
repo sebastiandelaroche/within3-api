@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Exception {
+  code: String!
+  message: String!
+}
+
+type Place {
+  latitude: String!
+  longitude: String!
+  placeName: String!
+  state: String!
+  stateAbbreviation: String!
+}
+
+type Query {
+  zipcode(country: String!, postalCode: String!): ZipCodeResult!
+}
+
+type ZipCode {
+  country: String!
+  countryAbbreviation: String!
+  places: [Place!]!
+  postalCode: String!
+}
+
+union ZipCodeResult = Exception | ZipCode
