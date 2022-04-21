@@ -15,4 +15,6 @@ $ yarn install
 $ yarn start:dev
 ```
 
-note: Remember, `within3-api` have to run first than `within3-ui`
+notes:
+- Remember, `within3-api` have to run first than `within3-ui`
+- http://localhost:3001/graphql to access graphql client
